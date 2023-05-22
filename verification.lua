@@ -8,8 +8,8 @@ local githubscriptrepolink = "https://raw.githubusercontent.com/Happy591/TebexVa
 local githubMainDatalink = "https://raw.githubusercontent.com/Happy591/TebexValidator//main/data.json"
 
 
-if GetCurrentResourceName() ~= scriptname then for k=1,20 do print("^8 [INFO] Please change resource folder name to "..scriptname.." or will have feature not working !^0") end return end
-print("^3 [INFO] "..GetCurrentResourceName().." v"..version.." has loaded with the Framework : "..Config.Framework.." !^0")
+if GetCurrentResourceName() ~= scriptname then for k=1,20 do print("^8[INFO] Please change resource folder name to "..scriptname.." or will have feature not working !^0") end return end
+print("^3[INFO] "..GetCurrentResourceName().." v"..version.." has loaded with the Framework : "..Config.Framework.." !^0")
 
 function versionchecker()	
 	local data = getdatafromapi(githubrepolink, function(data)
@@ -17,7 +17,7 @@ function versionchecker()
 			local dataversion = data.version
 			local change = data.changelog
             if version < dataversion then
-				print("^8 [INFO] "..GetCurrentResourceName().." version is NOT up to date! Update files (fxmanifest.lua as well) from Keymaster! (Script Version: v"..dataversion.." | Server Version: v"..version.."!^0")
+				print("^8[INFO] "..GetCurrentResourceName().." version is NOT up to date! Update files (fxmanifest.lua as well) from Keymaster! (Script Version: v"..dataversion.." | Server Version: v"..version.."!^0")
 			end
 		end
 	end)
