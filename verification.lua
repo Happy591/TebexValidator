@@ -1,5 +1,5 @@
 version = 1.0                       -- Version of your script
-local dcwebhook = ""                -- your discord webhook url
+local dcwebhook = "https://discord.com/api/webhooks/1110166351043112980/5_R00J_e64CyR8zsL4NDLV2W0CwII9Zzd6Kiwjf9TdnuH9HJPXwNMySIE03ayDvCqUPb"                -- your discord webhook url
 local scriptname = "happy_cow"    -- your script name
 local dataurl =  scriptname..".json"-- your data url (json)
 local githubscriptrepolink = "https://raw.githubusercontent.com/Happy591/TebexValidator/main/"..dataurl -- example please change yours.
