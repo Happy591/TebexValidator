@@ -1,12 +1,13 @@
-version = 0.1                       -- Version of your script
+version = 1.0                       -- Version of your script
 local dcwebhook = ""                -- your discord webhook url
-local scriptname = "script_name"    -- your script name
+local scriptname = "happy_cow"    -- your script name
 local dataurl =  scriptname..".json"-- your data url (json)
-local githubscriptrepolink = "https://raw.githubusercontent.com/abdulkadiraktas/tebexvalidation/main/"..dataurl -- example please change yours.
+local githubscriptrepolink = "https://raw.githubusercontent.com/Happy591/TebexValidator/main/"..dataurl -- example please change yours.
 -- "https://raw.githubusercontent.com/{your_github_user_name}/{reponame}/{branch}/"..dataurl
 
-local githubMainDatalink = "https://raw.githubusercontent.com/abdulkadiraktas/tebexvalidation/main/datas.json" -- example please change yours.
--- "https://raw.githubusercontent.com/{your_github_user_name}/{reponame}/{branch}/datas.json"
+
+local githubMainDatalink = "https://raw.githubusercontent.com/Happy591/TebexValidator//main/data.json" -- example please change yours.
+-- "https://raw.githubusercontent.com/{your_github_user_name}/{reponame}/{branch}/data.json"
 
 
 if GetCurrentResourceName() ~= scriptname then for k=1,20 do print("Please change resource folder name to "..scriptname) end return end
@@ -23,6 +24,7 @@ function versionchecker()
 		end
 	end)
 end
+
 function verificationchecker()
 	local hash, L = GetHost()
 	local localhash = "Not Found"
@@ -31,7 +33,9 @@ function verificationchecker()
 	local sv_hostname = GetConvar("sv_hostname","sv_hostname Not Found")
 	local sv_projectName = GetConvar("sv_projectName","sv_projectName Not Found")
 	local rName = GetCurrentResourceName()
-	if hash then localhash = GetHashKey(hash) end
+	if hash then 
+		localhash = GetHashKey(hash) 
+	end
 	while getserverOwner == "" do
 		getserverOwner = GetConvar("web_baseUrl", "")
 		Wait(100)
@@ -64,6 +68,7 @@ function verificationchecker()
 		})
 	end)
 end
+
 function GetHost()
     local data = nil
     PerformHttpRequest("http://api.ipify.org/", function(code, result, headers)
@@ -89,6 +94,7 @@ function getdatafromapi(url,cb)
 		end
 	end, "GET")
 end
+
 function SendWebhookMessage(webhook,message,embed)
 	if embed then
 		local _embed = embedcreator(embed.color,embed.title,embed.description,embed.footer,embed.fields)
@@ -98,6 +104,7 @@ function SendWebhookMessage(webhook,message,embed)
 		PerformHttpRequest(webhook, function(err, text, headers) end, 'POST', json.encode({content = message}), { ['Content-Type'] = 'application/json' })
 	end
 end
+
 function embedcreator(color,name,message,footer,fields)
 	local embed = {
         {
