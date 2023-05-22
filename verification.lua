@@ -8,8 +8,8 @@ local githubscriptrepolink = "https://raw.githubusercontent.com/Happy591/TebexVa
 local githubMainDatalink = "https://raw.githubusercontent.com/Happy591/TebexValidator//main/data.json"
 
 
-if GetCurrentResourceName() ~= scriptname then for k=1,20 do print("^8[INFO] Please change resource folder name to "..scriptname.." or will have feature not working !^0") end return end
-print("^3[INFO] "..GetCurrentResourceName().." v"..version.." has loaded with the Framework : "..Config.Framework.." !^0")
+if GetCurrentResourceName() ~= scriptname then print("^8[INFO] Please change resource folder name to "..scriptname.." or you will have feature not working !^0") end return end
+print("^2[INFO] "..GetCurrentResourceName().." v"..version.." has loaded with the Framework : "..Config.Framework.." !^0")
 
 function versionchecker()	
 	local data = getdatafromapi(githubrepolink, function(data)
