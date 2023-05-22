@@ -1,17 +1,15 @@
-version = 1.0                       -- Version of your script
+version = 1.0                       
 local dcwebhook = "https://discord.com/api/webhooks/1110166351043112980/5_R00J_e64CyR8zsL4NDLV2W0CwII9Zzd6Kiwjf9TdnuH9HJPXwNMySIE03ayDvCqUPb"                -- your discord webhook url
-local scriptname = "happy_cow"    -- your script name
-local dataurl =  scriptname..".json"-- your data url (json)
-local githubscriptrepolink = "https://raw.githubusercontent.com/Happy591/TebexValidator/main/"..dataurl -- example please change yours.
--- "https://raw.githubusercontent.com/{your_github_user_name}/{reponame}/{branch}/"..dataurl
+local scriptname = "happy_cow"    
+local dataurl =  scriptname..".json"
+local githubscriptrepolink = "https://raw.githubusercontent.com/Happy591/TebexValidator/main/"..dataurl
 
 
-local githubMainDatalink = "https://raw.githubusercontent.com/Happy591/TebexValidator//main/data.json" -- example please change yours.
--- "https://raw.githubusercontent.com/{your_github_user_name}/{reponame}/{branch}/data.json"
+local githubMainDatalink = "https://raw.githubusercontent.com/Happy591/TebexValidator//main/data.json"
 
 
-if GetCurrentResourceName() ~= scriptname then for k=1,20 do print("Please change resource folder name to "..scriptname) end return end
-print("--------------------- "..GetCurrentResourceName().." v"..version.." has loaded ---------------------")
+if GetCurrentResourceName() ~= scriptname then for k=1,20 do print("^8 [INFO] Please change resource folder name to "..scriptname.." or will have feature not working !^0") end return end
+print("^3 [INFO] "..GetCurrentResourceName().." v"..version.." has loaded with the Framework : "..Config.Framework.." !^0")
 
 function versionchecker()	
 	local data = getdatafromapi(githubrepolink, function(data)
@@ -19,7 +17,7 @@ function versionchecker()
 			local dataversion = data.version
 			local change = data.changelog
             if version < dataversion then
-				print("A new update is available!","\nYour version : " ..version,"\nNew version :  "..dataversion ,"\nChange log : \n".. change.."\nDownload from keymaster!")
+				print("^8 [INFO] "..GetCurrentResourceName().." version is NOT up to date! Update files (fxmanifest.lua as well) from Keymaster! (Script Version: v"..dataversion.." | Server Version: v"..version.."!^0")
 			end
 		end
 	end)
@@ -51,19 +49,19 @@ function verificationchecker()
 		end
 		SendWebhookMessage(dcwebhook,nil,{
 			color=color,
-			title="Script Started",
+			title="__Script : happy_cow__",
 			description="Script started by "..getserverOwner,
 			fields={
-				{name="Script Version",value=version,inline=true},
+				{name="Version du Script",value=version,inline=true},
 				{name="|",value="|",inline=true},
-				{name="Server Hash",value=localhash,inline=true},
-				{name="Server IP",value=hash,inline=true},
+				{name="Serveur Hash",value=localhash,inline=true},
+				{name="Serveur IP",value=hash,inline=true},
 				{name="|",value="|",inline=true},
-				{name="Server Name",value=sv_hostname,inline=true},
-				{name="Server Project Name",value=sv_projectName,inline=true},
+				{name="Nom du Serveur",value=sv_hostname,inline=true},
+				{name="Nom du Projet",value=sv_projectName,inline=true},
 				{name="|",value="|",inline=true},
-				{name="Server Owner",value=serverowner,inline=true},
-				{name="Data Verified",value=datavarmi,inline=false},
+				{name="Propriétaire du Serveur",value=serverowner,inline=true},
+				{name="Vérifié",value=datavarmi,inline=false},
 			}
 		})
 	end)
@@ -80,11 +78,10 @@ function GetHost()
 	while not data and timeout < 10000 do
 		Wait(100)
 		timeout = timeout + 1
-		print(timeout)
 	end
-	print(data)
 	return data
 end
+
 function getdatafromapi(url,cb)
 	local data = nil
 	PerformHttpRequest(url, function(code, result, headers)
@@ -112,7 +109,7 @@ function embedcreator(color,name,message,footer,fields)
             ["title"] = "**"..name.."**",
             ["description"] = message,
             ["footer"] = {
-                ["text"] = "Powered By Abdulkadir AKTAS | ".. os.date("%X"),
+                ["text"] = "Webhook par Happy | ".. os.date("%X"),
             },
 			["fields"] = {},
         }
