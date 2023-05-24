@@ -1,7 +1,5 @@
 {
-    "happy-591-4ee75q.users.cfx.re": {
-        "ownedScript": {
-            "happy_cow": true
-        }
-    }
+    "version":1.0,
+    "changelog" : "First Release",
+    "old":[]
 }
