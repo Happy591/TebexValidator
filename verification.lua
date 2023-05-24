@@ -1,10 +1,9 @@
-version = 1.0                       
+version = X      
+
 local dcwebhook = "https://discord.com/api/webhooks/1110166351043112980/5_R00J_e64CyR8zsL4NDLV2W0CwII9Zzd6Kiwjf9TdnuH9HJPXwNMySIE03ayDvCqUPb"                -- your discord webhook url
-local scriptname = "happy_cow"    
+local scriptname = "X"    
 local dataurl =  scriptname..".json"
 local githubscriptrepolink = "https://raw.githubusercontent.com/Happy591/TebexValidator/main/"..dataurl
-
-
 local githubMainDatalink = "https://raw.githubusercontent.com/Happy591/TebexValidator//main/data.json"
 
 
@@ -40,12 +39,12 @@ function verificationchecker()
 	end
 	getdatafromapi(githubMainDatalink, function(data)		
 		local i, j = string.find(getserverOwner,"-")
-		local serverowner = string.sub(getserverOwner,1,i-1) -- server owner name, If the server owner's name has this sign "-", it may not be validated in the verification system.
+		local serverowner = string.sub(getserverOwner,1,i-1)
 		local ownedScript = data?[serverowner]
-		local color = 15158332 -- red color 
+		local color = 15158332
 		if data and ownedScript and ownedScript?.ownedScript?[rName] then
 			datavarmi = true
-            color = 1821730 -- green color
+            color = 1821730
 		end
 		SendWebhookMessage(dcwebhook,nil,{
 			color=color,
