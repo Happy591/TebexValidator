@@ -8,16 +8,67 @@
     "Tuni": {
         "ownedScript": {
             "happy_cow": true
+            "happy_sheep": true
+        }
+    }
+    "khyari-ydjzem.users.cfx.re": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": true
         }
     }
     "enzopieri": {
         "ownedScript": {
             "happy_cow": true
+            "happy_sheep": false
         }
     }
     "enzopieri-g5d6am.users.cfx.re": {
         "ownedScript": {
             "happy_cow": true
+            "happy_sheep": false
+        }
+    }
+    "ducethemaker": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": false
+        }
+    }
+    "ducethemaker-3loypz.users.cfx.re": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": false
+        }
+    }
+    "ducethemaker-yrkyx9.users.cfx.re": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": false
+        }
+    }
+    "gwred": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": false
+        }
+    }
+    "gwred-9q8d8y.users.cfx.re": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": false
+        }
+    }
+    "highnoon12": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": false
+        }
+    }
+    "highnoon12-e5v4ma.users.cfx.re": {
+        "ownedScript": {
+            "happy_cow": true
+            "happy_sheep": false
         }
     }
 }
