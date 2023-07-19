@@ -87,7 +87,7 @@
         "ownedScript": {
             "happy_cow": false
             "happy_sheep": true
-            "happy_chicken": false
+            "happy_chicken": true
         }
     }
     "fanterazzi": {
