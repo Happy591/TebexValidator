@@ -4,6 +4,8 @@
             "happy_cow": true
             "happy_sheep": true
             "happy_chicken": true
+            "happy_valbank": true
+            "happy_stbank": true  
         }
     }
     "enzopieri": {
@@ -11,6 +13,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "enzopieri-g5d6am.users.cfx.re": {
@@ -18,6 +22,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "ducethemaker": {
@@ -25,6 +31,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "ducethemaker-3loypz.users.cfx.re": {
@@ -32,6 +40,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "ducethemaker-yrkyx9.users.cfx.re": {
@@ -39,6 +49,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "gwred": {
@@ -46,6 +58,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "gwred-9q8d8y.users.cfx.re": {
@@ -53,6 +67,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "highnoon12": {
@@ -60,6 +76,8 @@
             "happy_cow": true
             "happy_sheep": true
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "highnoon12-e5v4ma.users.cfx.re": {
@@ -67,6 +85,8 @@
             "happy_cow": true
             "happy_sheep": true
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "nochin23": {
@@ -74,6 +94,8 @@
             "happy_cow": true
             "happy_sheep": true
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "zatoichi": {
@@ -81,6 +103,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "hanballickedher": {
@@ -88,6 +112,8 @@
             "happy_cow": false
             "happy_sheep": true
             "happy_chicken": true
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "fanterazzi": {
@@ -95,6 +121,8 @@
             "happy_cow": false
             "happy_sheep": true
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "herosticworld": {
@@ -102,6 +130,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "herosticworld-y6vgv9.users.cfx.re": {
@@ -109,6 +139,8 @@
             "happy_cow": true
             "happy_sheep": false
             "happy_chicken": false
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "consuetudoexempla": {
@@ -116,6 +148,8 @@
             "happy_cow": true
             "happy_sheep": true
             "happy_chicken": true
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
     "consuetudoexempla-jedg74.users.cfx.re": {
@@ -123,6 +157,8 @@
             "happy_cow": true
             "happy_sheep": true
             "happy_chicken": true
+            "happy_valbank": false
+            "happy_stbank": false
         }
     }
 }
