@@ -1,13 +1,5 @@
 {
-  "happy_valbank_demo": {
       "test-code.users.cfx.re": {
         "date": "2023-07-20"
       }
-      "test2-code.users.cfx.re": {
-        "date": "2023-07-20"
-      }
-      "test3-code.users.cfx.re": {
-        "date": "2023-07-20"
-      }
-  }
 }
