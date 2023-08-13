@@ -1,8 +1,12 @@
 
 {
-    "version":1.1,
-    "changelog" : "Fix label during milking, now can be change",
+    "version":1.2,
+    "changelog" : "Fix",
     "old":[
+        {
+            "version":1.1,
+            "changelog" : "Fix label during milking, now can be change",
+        },
         {
             "version":1.0,
             "changelog" : "First Release",
