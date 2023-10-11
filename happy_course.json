@@ -1,0 +1,18 @@
+{
+    "version":1.3,
+    "changelog" : "Optimization",
+    "old":[
+        {
+            "version":1.2,
+            "changelog" : "Fix effect",
+        },
+        {
+            "version":1.1,
+            "changelog" : "Fix update",
+        },
+        {
+            "version":1.0,
+            "changelog" : "First Release",
+        }
+    ]
+}
