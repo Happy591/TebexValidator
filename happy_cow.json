@@ -1,7 +1,11 @@
 {
-    "version":1.3,
-    "changelog" : "Fix rsg, cooldown server side, optimization",
+    "version":1.4,
+    "changelog" : "Add buvket item",
     "old":[
+        {
+            "version":1.3,
+            "changelog" : "Fix rsg, cooldown server side, optimization",
+        },
         {
             "version":1.2,
             "changelog" : "Fix label during milking, now can be change",
