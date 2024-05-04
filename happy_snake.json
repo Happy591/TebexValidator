@@ -1,11 +1,7 @@
 {
-    "version":1.6,
+    "version":1.5,
     "changelog" : "Bug fix VORP",
     "old":[
-        {
-            "version":1.5,
-            "changelog" : "VORP Compatibility",
-        },
         {
             "version":1.4,
             "changelog" : "Bug fix antidote server side RSG",
@@ -16,7 +12,7 @@
         },
         {
             "version":1.2,
-            "changelog" : "",
+            "changelog" : "VORP Compatibility",
         },
         {
             "version":1.1,
