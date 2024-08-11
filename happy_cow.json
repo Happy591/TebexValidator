@@ -1,7 +1,11 @@
 {
-    "version":1.5,
-    "changelog" : "Add stamina drop",
+    "version":1.6,
+    "changelog" : "Add Possibility to change visibility of ped",
     "old":[
+        {
+            "version":1.5,
+            "changelog" : "Add stamina drop",
+        },
         {
             "version":1.4,
             "changelog" : "Add bucket item",
